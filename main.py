@@ -18,6 +18,7 @@ from typing import Dict, List, Tuple, Optional, Union
 import pytz
 import requests
 import yaml
+from rss_crawler import RSSFeedCrawler
 
 
 VERSION = "3.0.5"
@@ -4402,6 +4403,20 @@ class NewsAnalyzer:
         print(f"标题已保存到: {title_file}")
 
         return results, id_to_name, failed_ids
+
+                # Rastrear feeds RSS si están configurados
+        if 'rss_feeds' in CONFIG and CONFIG['rss_feeds']:
+            print(f"Rastreando {len(CONFIG['rss_feeds'])} feeds RSS...")
+            rss_crawler = RSSFeedCrawler(self.proxy_url)
+            rss_results, rss_id_to_name, rss_failed_ids = rss_crawler.crawl_rss_feeds(
+                CONFIG['rss_feeds'], self.request_interval
+            )
+            
+            # Combinar resultados RSS con resultados de plataformas
+            results.update(rss_results)
+            id_to_name.update(rss_id_to_name)
+            failed_ids.extend(rss_failed_ids)
+            print(f"Feeds RSS integrados: {len(rss_results)} exitosos")
 
     def _execute_mode_strategy(
         self, mode_strategy: Dict, results: Dict, id_to_name: Dict, failed_ids: List
