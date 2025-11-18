@@ -111,3 +111,167 @@ ai
 宇宙
 飞船
 航空
+
+
+# === INDUSTRIA TABLEROS DECORATIVOS ===
+# Productos y materiales
+MDF
+MFC
+melamina
+melamínico
+aglomerado
+tablero aglomerado
+tablero MDF
+tablero MFC
+tableros decorativos
+paneles decorativos
+superficies decorativas
+chapas
+chapas naturales
+laminados
+HPL
+laminado alto brillo
+lacado
+tablero lacado
+PerfectSense
+compacto
+tablero compacto
+encimeras
+worktop
+revestimientos
+cantos
+bordes
+melaminico
+melamínico
+
+# Acabados y texturas
+supermate
+mate
+alto brillo
+brillo
+texturizado
+poro sincronizado
+antihuellas
+antimanchas
+realwood
+feelwood
+
+# Sectores y aplicaciones
+industria del mueble
+fabricante de muebles
+muebles de cocina
+cocinas
+mobiliario cocina
+muebles baño
+interiorismo
+diseño interior
+arquitectura
+revestimiento fachada
+panelado
+estanterías
+armarios
+
+# === COMPETIDORES ===
+# Egger
+Egger
+Colección Decorativa Egger
+Eurodekor
+Egger Home
+Tableros Egger
+Melamina Egger
+ST40 Feelwood
+Casella Roble
+
+# Finsa
+Finsa
+Finsa Design
+Finsa Infinite
+Tricoya
+FibraColour
+Finsa Innovation
+Tableros Finsa
+
+# Cleaf
+Cleaf
+Cleaf Italia
+Espresso Cleaf
+Fronda Cleaf
+Alpaca Cleaf
+Duna Cleaf
+Mosaico Cleaf
+paneles Cleaf
+laminados Cleaf
+
+# Kastamonu
+Kastamonu
+Medelam
+Teknolam
+Yongalam
+Kastamonu Entegre
+
+# Pfleiderer
+Pfleiderer
+DecoBoard
+Pfleiderer DST
+Paneles Pfleiderer
+
+# Saviola
+Saviola
+Gruppo Saviola
+Panel Ecológico
+Technomatt
+madera reciclada
+tableros ecológicos
+Saviola sostenible
+
+# Kronospan
+Kronospan
+Kronodesign
+Kronobuild
+Kronoart
+Tableros Kronospan
+suelos laminados
+
+# Oneskin
+Oneskin
+OneSkin Italia
+lacado alto brillo Oneskin
+supermate Oneskin
+
+# === TÉRMINOS TÉCNICOS ===
+E1
+E0
+TSCA
+CARB
+emisión formaldehído
+baja emisión
+FSC
+PEFC
+sostenibilidad
+economía circular
+reciclado
+upcycling
+resistencia humedad
+ignífugo
+retardante fuego
+Class B
+Class C
+
+# === TENDENCIAS Y NOVEDADES ===
+innovación tableros
+nueva colección
+lanzamiento
+novedades
+tendencias diseño
+diseño contemporáneo
+texturas naturales
+acabados premium
+calidad premium
+
+# === FERIAS Y EVENTOS ===
+Sicam
+Interzum
+Architect@Work
+Fimma Maderalia
+feria mueble
+evento interiorismo
