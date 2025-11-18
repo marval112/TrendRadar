@@ -99,3 +99,13 @@ platforms:
     name: "Douyin"
   - id: "zhihu"
     name: "Zhihu"
+
+    # === FEEDS RSS PARA FUENTES EUROPEAS ===
+rss_feeds:
+  - id: "madera-sostenible"
+    name: "Madera Sostenible"
+    url: "https://madera-sostenible.com/feed/"
+  
+  - id: "aidimme"
+    name: "AIDIMME Actualidad"
+    url: "https://actualidad.aidimme.es/feed/"
