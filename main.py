@@ -4399,18 +4399,19 @@ class NewsAnalyzer:
             ids, self.request_interval
         )
 
-    # Agregar crawling de feeds RSS si están configurados
-    if "RSS" in CONFIG:
-                        rss_feeds = CONFIG["RSS"].get("feeds", [])
-                        if rss_feeds:
-                                        print(f"\nCrawling {len(rss_feeds)} RSS feeds configurados...")
-                                        rss_crawler = RSSFeedCrawler()
-                                        rss_results, rss_id_to_name = rss_crawler.crawl_rss_feeds(rss_feeds)
-                                        print(f"RSS feeds encontraron {len(rss_results)} artículos")
+        # Agregar crawling de feeds RSS si están configurados
+        if "RSS" in CONFIG:
+            rss_feeds = CONFIG["RSS"].get("feeds", [])
+            if rss_feeds:
+                print(f"\nCrawling {len(rss_feeds)} RSS feeds configurados...")
+                rss_crawler = RSSFeedCrawler()
+                rss_results, rss_id_to_name = rss_crawler.crawl_rss_feeds(rss_feeds)
+                print(f"RSS feeds encontraron {len(rss_results)} artículos")
+                
+                # Fusionar resultados de RSS con resultados de plataformas
+                results.extend(rss_results)
+                id_to_name.update(rss_id_to_name)
 
-                    # Fusionar resultados de RSS con resultados de plataformas
-                    results.extend(rss_results)
-                    id_to_name.update(rss_id_to_name)
 
         title_file = save_titles_to_file(results, id_to_name, failed_ids)
         print(f"标题已保存到: {title_file}")
