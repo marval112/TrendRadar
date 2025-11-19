@@ -4399,8 +4399,8 @@ class NewsAnalyzer:
             ids, self.request_interval
         )
 
-            # Agregar crawling de feeds RSS si están configurados
-            if "RSS" in CONFIG:
+    # Agregar crawling de feeds RSS si están configurados
+    if "RSS" in CONFIG:
                         rss_feeds = CONFIG["RSS"].get("feeds", [])
                         if rss_feeds:
                                         print(f"\nCrawling {len(rss_feeds)} RSS feeds configurados...")
