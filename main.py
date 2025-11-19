@@ -4398,7 +4398,6 @@ class NewsAnalyzer:
         results, id_to_name, failed_ids = self.data_fetcher.crawl_websites(
             ids, self.request_interval
         )
-
         # Agregar crawling de feeds RSS si están configurados
         if "RSS" in CONFIG:
             rss_feeds = CONFIG["RSS"].get("feeds", [])
@@ -4411,7 +4410,6 @@ class NewsAnalyzer:
                 # Fusionar resultados de RSS con resultados de plataformas
                 results.extend(rss_results)
                 id_to_name.update(rss_id_to_name)
-
 
         title_file = save_titles_to_file(results, id_to_name, failed_ids)
         print(f"标题已保存到: {title_file}")
